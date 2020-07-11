@@ -1,11 +1,8 @@
-# Ignore everything we will whitelist what we want to pull in
-/*
-/*/
-
-!.gitignore
-!.gitattributes
-!README.md
-
-!/werewolf/Assets/*
-!/werewolf/ProjectSettings/*
-
+# Ignore everything we will whitelist what we want to pull in/
+/werewolf/Temp/*
+/werewolf/obj/*
+/werewolf/Library/*
+/werewolf/Packages/*
+/werewolf/Logs/*
+/werewolf/.idea
+/werewolf/.ionide
