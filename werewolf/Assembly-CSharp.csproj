@@ -58,7 +58,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Character2DController.cs" />
+     <Compile Include="Assets\Player\Scripts\movement.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>H:/gamedev/gameJam2020/werewolf/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
