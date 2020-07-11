@@ -1,1 +1,16 @@
+
+*.csproj
+*.sln
+*.tmp
+*.pidb
+
+sysinfo.txt
+
+*.apk
+*.unitypackage
+
+
+*.pidb.meta
+*.pdb.meta
+
 werewolf/Temp/*
