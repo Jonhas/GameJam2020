@@ -1,16 +1,11 @@
+# Ignore everything we will whitelist what we want to pull in
+/*
+/*/
 
-*.csproj
-*.sln
-*.tmp
-*.pidb
+!.gitignore
+!.gitattributes
+!README.md
 
-sysinfo.txt
+!/werewolf/Assets/*
+!/werewolf/ProjectSettings/*
 
-*.apk
-*.unitypackage
-
-
-*.pidb.meta
-*.pdb.meta
-
-werewolf/Temp/*
