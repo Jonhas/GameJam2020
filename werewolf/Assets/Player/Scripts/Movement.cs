@@ -30,12 +30,24 @@ namespace Player.scripts {
         // Update is called once per frame
         private void Update()
         { 
+            /*
+            //var horizontal = Input.GetAxisRaw("Horizontal"); 
+            var horizontalAxis = new Vector3(Input.GetAxisRaw("Horizontal"),0,0); 
             var scale = MovementSpeed * Time.deltaTime;
             _horizontalMovement.x *= scale;
             _horizontalMovement.y *= scale;
             _horizontalMovement.z *= scale;
             transform.position += _horizontalMovement; 
             if (Input.GetKeyDown(KeyCode.W)) //&& Math.Abs(rigid.velocity.y) < 0.00)
+            {
+                //rigid.AddForce(new Vector2(0,jumpForce), ForceMode2D.Impulse);
+                rigid.velocity = Vector2.up * JumpForce;
+            }
+            */
+            var movement = Input.GetAxis("Horizontal");
+            var horizontalAxis = new Vector3(movement, 0, 0);
+            transform.position += horizontalAxis * Time.deltaTime * MovementSpeed;
+            if (Input.GetKeyDown(KeyCode.Space))//&& Math.Abs(rigid.velocity.y) < 0.00)
             {
                 //rigid.AddForce(new Vector2(0,jumpForce), ForceMode2D.Impulse);
                 rigid.velocity = Vector2.up * JumpForce;
